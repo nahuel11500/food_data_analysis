@@ -76,7 +76,13 @@ We can see maybe see a really intersting tendance here, that the majority of rec
 
 Let's see an intersting aggregate, it's going to be the average rating for differents calories levels.
 
-plot here
+| calorie_level |  rating |
+| :------------ | ------: |
+| 0-500         | 4.62621 |
+| 500-1000      | 4.62457 |
+| 1000-1500     | 4.61285 |
+| 1500-2000     | 4.61402 |
+| 2000+         | 4.62849 |
 
 This aggregate is also really intersting. Indeed, we can see that the average rating is almost the same for every calorie level. So it would appear that the calorie level isn't influencing the recipe rating.
 
@@ -86,7 +92,21 @@ This aggregate is also really intersting. Indeed, we can see that the average ra
 
 First of all, let's find which columns is missing some values :
 
-df plot here
+|                |    0 |
+| :------------- | ---: |
+| name           |    1 |
+| id             |    0 |
+| minutes        |    0 |
+| contributor_id |    0 |
+| submitted      |    0 |
+| tags           |    0 |
+| nutrition      |    0 |
+| n_steps        |    0 |
+| steps          |    0 |
+| description    |   70 |
+| ingredients    |    0 |
+| n_ingredients  |    0 |
+| rating         | 2609 |
 
 Well, we can that the rating columns is the one that got the most missing element. For the two others columns, description and name, it's really only a few so we're going to ignore that and focus on the rating column.
 
@@ -106,9 +126,9 @@ Let's examine two columns: 'n_steps' and 'n_ingredients'. We hypothesize that re
 
 Let's first start to plot the distribution of n_steps and n_ingredients when ratings are missings and not missings :
 
-plot 1
+<iframe src="numbers_steps_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
 
-plot 2
+<iframe src="numbers_ingredients_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
 
 So, we can see our distributions have kind of similar shape and mean. So we're going to run our permutation test using the K-S statistic.
 
