@@ -179,3 +179,11 @@ The observed correlation is approximately -0.0013, which is very close to zero. 
 The p-value is 0.339, which is greater than the commonly used significance level of 0.05. This means that we do not reject the null hypothesis. Therefore, based on this test, we conclude that there's no statistical evidence to suggest that recipes with more calories receive lower ratings.
 
 I'm not really suprise since it confirm our intuition from the previous Bivariate Analysis.
+
+## Conclusion
+
+Our analysis of the Food.com dataset showed no statistical evidence that a recipe's calorie content influences its rating. Despite an initial trend indicating recipes with fewer calories tended to have higher ratings, we discovered this was likely due to more low-calorie recipes being present in our dataset.
+
+The missingness in the 'rating' column seemed to depend on the 'n_steps' column, suggesting that more elaborate recipes were likely to have ratings. However, there was no such dependency on the 'n_ingredients' column.
+
+Our hypothesis test indicated almost zero correlation between 'calories' and 'ratings', with a p-value well above the standard significance level of 0.05. This led us to conclude that the number of calories in a recipe does not significantly impact its rating. Further studies might explore other factors influencing recipe ratings, such as taste, ease of preparation, or presentation.
