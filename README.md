@@ -126,9 +126,9 @@ Let's examine two columns: 'n_steps' and 'n_ingredients'. We hypothesize that re
 
 Let's first start to plot the distribution of n_steps and n_ingredients when ratings are missings and not missings :
 
-<iframe src="numbers_steps_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/numbers_steps_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="numbers_ingredients_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/numbers_ingredients_Missingness_Ratings.html" width=800 height=600 frameBorder=0></iframe>
 
 So, we can see our distributions have kind of similar shape and mean. So we're going to run our permutation test using the K-S statistic.
 
@@ -161,10 +161,14 @@ Null Hypothesis (H0): The number of calories in a recipe does not influence the 
 Alternative Hypothesis (H1): Recipes with more calories receive lower ratings. This implies that there is a negative correlation between the number of calories in a recipe and its rating.
 
 Test Statistic: We chose the correlation coefficient as our test statistic because we are interested in the relationship between two numerical variables: 'calories' and 'rating'. The correlation coefficient quantifies the strength and direction of this relationship, making it an appropriate choice for our test statistic.
+We shoudn't take the absolute value because we are intersted in whether recipes with more calories receive lower ratings : it's a one-tailed test.
 
 Significance Level: We chose a significance level of 0.05 because this is the standard choice for significance level in many statistical tests.
 
 After running the hypothesis test, here are the values we obtain :
+
+<iframe src="assets/hypothesis_test.html" width=800 height=600 frameBorder=0></iframe>
+
 Observed correlation: -0.0013305173991796462
 P-value: 0.339
 
