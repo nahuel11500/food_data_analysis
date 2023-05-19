@@ -42,13 +42,13 @@ So, in the first plot about rating, we can see that a majority of recipes have g
 
 Let's plot our first univariate analysis. It's going to be the distributions of ratings.
 
-Plot here
+<iframe src="assets/distribution_of_ratings.html" width=800 height=600 frameBorder=0></iframe>
 
 So, in this first plot about rating, we can see that a majority of recipes have great ratings, over 4 stars. It's only a few recipies that have low ratings.
 
 Let's plot our second univariate analysis. It's going to be the distributions of calories for each recipies.
 
-Plot here
+<iframe src="assets/distribution_of_calories.html" width=800 height=600 frameBorder=0></iframe>
 
 For this second plot, we can see the distribution of calories for the recipies. We can see that a lot of recipies are under 2000 calories.
 
